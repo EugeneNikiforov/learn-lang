@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Zoya",
+    "surname": "Konfetkina",
+    "languages": ["English", "German"],
+    "levels": [
+      "A1 Beginner",
+      "A2 Elementary",
+      "B1 Pre-Intermediate",
+      "B2 Intermediate",
+      "C1 Advanced",
+      "C2 Proficient"
+    ],
+    "rating": 4.5,
+    "reviews": [
+      {
+        "reviewer_name": "Alice",
+        "reviewer_rating": 4.5,
+        "comment": "Zoya is an excellent teacher! I highly recommend her."
+      },
+      {
+        "reviewer_name": "Nafanya",
+        "reviewer_rating": 5,
+        "comment": "Zoya is very knowledgeable and patient. I enjoyed her classes."
+      }
+    ],
+    "price_per_hour": 25,
+    "lessons_done": 1337,
+    "avatar_url": "https://cdn-icons-png.flaticon.com/512/616/616438.png",
+    "lesson_info": "The lessons focus on improving speaking and listening skills through interactive activities and discussions",
+    "conditions": [
+      "Teaches only adult learners (18 years and above).",
+      "Flexible scheduling options available"
+    ],
+    "experience": "Misha has benn teaching languages for 7 year and has extensive experience in helping students improve their languages skills."
+  },
+  {}
+]
