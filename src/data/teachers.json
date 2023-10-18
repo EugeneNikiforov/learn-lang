@@ -34,5 +34,38 @@
     ],
     "experience": "Misha has benn teaching languages for 7 year and has extensive experience in helping students improve their languages skills."
   },
-  {}
+  {
+    "name": "Uliana",
+    "surname": "Deploivna",
+    "languages": ["English", "Polish"],
+    "levels": [
+      "A1 Beginner",
+      "A2 Elementary",
+      "B1 Pre-Intermediate",
+      "B2 Intermediate",
+      "C1 Advanced"
+    ],
+    "rating": 4.5,
+    "reviews": [
+      {
+        "reviewer_name": "Zhora",
+        "reviewer_rating": 4,
+        "comment": "Uliana is an excellent teacher! I completely immerse myself in my studies during her lessons."
+      },
+      {
+        "reviewer_name": "Jessica",
+        "reviewer_rating": 4.5,
+        "comment": "Uliana is very knowledgeable and patient. I enjoyed her classes."
+      }
+    ],
+    "price_per_hour": 22,
+    "lessons_done": 768,
+    "avatar_url": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
+    "lesson_info": "The lessons focus on improving speaking and listening skills through interactive activities and discussions",
+    "conditions": [
+      "Teaches teenagers (12 years and above).",
+      "Flexible scheduling options available"
+    ],
+    "experience": "Pedro has benn teaching languages for 7 year and has extensive experience in helping students improve their languages skills."
+  }
 ]
