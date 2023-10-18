@@ -1,3 +1,5 @@
+import Teachers from "./Teachers/Teachers";
+import teachers from "../data/teachers.json";
 import "../index.css";
 
 export const App = () => {
@@ -9,11 +11,12 @@ export const App = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: 80,
+        fontSize: 40,
         color: "#010101",
       }}
     >
       <h1>11111111</h1>
+      <Teachers teachers={teachers} />
     </div>
   );
 };
