@@ -1,5 +1,6 @@
 const TeachersItem = ({ teacher }) => {
-  console.log(teacher);
+  //   console.log(teacher);
+  const { name, surname } = teacher;
   return (
     <div>
       <div>
@@ -7,7 +8,9 @@ const TeachersItem = ({ teacher }) => {
       </div>
       <div>
         <p>Languages</p>
-        <p></p>
+        <p>
+          {name} {surname}
+        </p>
       </div>
       <div>
         <ul>
@@ -54,16 +57,16 @@ const TeachersItem = ({ teacher }) => {
       <div>
         <ul>
           <li>
-            <a href="">#A1 Beginner</a>
+            <span>#A1 Beginner</span>
           </li>
           <li>
-            <a href="">#A2 Elementary</a>
+            <span>#A2 Elementary</span>
           </li>
           <li>
-            <a href="">#B1 Intermediate</a>
+            <span>#B1 Intermediate</span>
           </li>
           <li>
-            <a href="">#B2 Upper-Intermediate</a>
+            <span>#B2 Upper-Intermediate</span>
           </li>
         </ul>
       </div>

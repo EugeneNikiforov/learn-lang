@@ -15,7 +15,6 @@ export const App = () => {
         color: "#010101",
       }}
     >
-      <h1>11111111</h1>
       <Teachers teachers={teachers} />
     </div>
   );
