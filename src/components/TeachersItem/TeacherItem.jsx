@@ -1,6 +1,15 @@
 const TeachersItem = ({ teacher }) => {
   //   console.log(teacher);
-  const { name, surname } = teacher;
+  const {
+    name,
+    surname,
+    lessons_done,
+    rating,
+    price_per_hour,
+    languages,
+    lesson_info,
+    conditions,
+  } = teacher;
   return (
     <div>
       <div>
@@ -20,15 +29,15 @@ const TeachersItem = ({ teacher }) => {
           </li>
           <li>
             <span>Lessons done:</span>
-            <span></span>
+            <span> {lessons_done}</span>
           </li>
           <li>
             <span>Rating:</span>
-            <span></span>
+            <span> {rating}</span>
           </li>
           <li>
             <span>Price / 1 hour:</span>
-            <span></span>
+            <span> {price_per_hour}$</span>
           </li>
         </ul>
       </div>
@@ -39,15 +48,15 @@ const TeachersItem = ({ teacher }) => {
         <ul>
           <li>
             <span>Speaks:</span>
-            <span></span>
+            <span> {languages}</span>
           </li>
           <li>
             <span>Lesson Info:</span>
-            <span></span>
+            <span> {lesson_info}</span>
           </li>
           <li>
             <span>Conditions:</span>
-            <span></span>
+            <span> {conditions}</span>
           </li>
         </ul>
       </div>
