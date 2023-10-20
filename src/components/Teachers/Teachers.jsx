@@ -1,4 +1,5 @@
 import TeachersItem from "../TeachersItem/TeacherItem";
+import style from "./teachers.module.scss";
 
 const Teachers = ({ teachers }) => {
   const teachersList = teachers.map((teacher) => (
@@ -6,7 +7,7 @@ const Teachers = ({ teachers }) => {
   ));
   return (
     <section>
-      <ul>{teachersList}</ul>
+      <ul className={style.teachers}>{teachersList}</ul>
     </section>
   );
 };
