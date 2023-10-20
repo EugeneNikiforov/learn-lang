@@ -1,5 +1,6 @@
 import Teachers from "./Teachers/Teachers";
 import teachers from "../data/teachers.json";
+import Header from "./Home/Header";
 import "../index.css";
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
         color: "#010101",
       }}
     >
+      <Header />
       <Teachers teachers={teachers} />
     </div>
   );
