@@ -1,3 +1,5 @@
+import LangLevels from "./LangLevels/LangLevels";
+
 const TeachersItem = ({ teacher }) => {
   //   console.log(teacher);
   const {
@@ -10,8 +12,12 @@ const TeachersItem = ({ teacher }) => {
     lesson_info,
     conditions,
   } = teacher;
+
+  const langLevels = teacher.levels.map((level) => (
+    <LangLevels level={level} key={level.toString()} />
+  ));
   return (
-    <div>
+    <li>
       <div>
         <img src="" alt="" />
       </div>
@@ -64,22 +70,9 @@ const TeachersItem = ({ teacher }) => {
         <span>Read more</span>
       </div>
       <div>
-        <ul>
-          <li>
-            <span>#A1 Beginner</span>
-          </li>
-          <li>
-            <span>#A2 Elementary</span>
-          </li>
-          <li>
-            <span>#B1 Intermediate</span>
-          </li>
-          <li>
-            <span>#B2 Upper-Intermediate</span>
-          </li>
-        </ul>
+        <ul>{langLevels}</ul>
       </div>
-    </div>
+    </li>
   );
 };
 
