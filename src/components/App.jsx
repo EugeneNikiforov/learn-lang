@@ -1,7 +1,7 @@
 import Teachers from "./Teachers/Teachers";
 import teachers from "../data/teachers.json";
 import Header from "./Home/Header";
-import "../index.css";
+import "../index.scss";
 
 export const App = () => {
   return (

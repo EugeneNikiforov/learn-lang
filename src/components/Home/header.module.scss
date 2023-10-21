@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+
+    &Container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    &LogoContainer {
+        margin-right: 390px;
+    }
+
+    &Logo {
+        color: #121417;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+
+    &Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &Home {
+            color: #121417;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &Teachers {
+            color: #121417;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-left: 28px;
+        }
+    }
+}
