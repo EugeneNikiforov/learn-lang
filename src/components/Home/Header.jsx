@@ -11,9 +11,11 @@ const Header = () => {
           <span className={style.headerMenuHome}>Home</span>
           <span className={style.headerMenuTeachers}>Teachers</span>
         </div>
-        <div>
-          <span>Log</span>
-          <span>Registration</span>
+        <div className={style.headerBtns}>
+          <span className={style.headerBtnsLogin}>Log in</span>
+          <button type="button" className={style.headerBtnsReg}>
+            Registration
+          </button>
         </div>
       </div>
     </header>
