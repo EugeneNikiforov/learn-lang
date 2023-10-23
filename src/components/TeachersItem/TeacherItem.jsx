@@ -1,4 +1,5 @@
 import LangLevels from "./LangLevels/LangLevels";
+import style from "./teachersItem.module.scss";
 
 const TeachersItem = ({ teacher }) => {
   //   console.log(teacher);
@@ -17,17 +18,17 @@ const TeachersItem = ({ teacher }) => {
     <LangLevels level={level} key={level.toString()} />
   ));
   return (
-    <li>
+    <li className={style.teachers}>
       <div>
         <img src="" alt="" />
       </div>
-      <div>
+      <div className={style.teachersName}>
         <p>Languages</p>
         <p>
           {name} {surname}
         </p>
       </div>
-      <div>
+      <div className={style.teachersInfo}>
         <ul>
           <li>
             <span>Lessons online</span>
