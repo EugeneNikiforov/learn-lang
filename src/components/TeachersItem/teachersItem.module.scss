@@ -1,0 +1,50 @@
+.teachers {
+    // width: 1184px;
+    // height: 328px;
+
+    &NameNote {
+        color: var(--text-notes);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &NamePara {
+        color: var(--text-primary);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &InfoList {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &InfoPara {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &InfoCost {
+        color: var(--text-price);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &LangLevels {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

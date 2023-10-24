@@ -1,0 +1,25 @@
+.langLevels {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 35px;
+    border: 1px solid var(--link-border);
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &Para {
+        color: var(--text-primary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.142;
+    }
+}
+
+.langLevels:hover, .langLevels:focus {
+    background-color: var(--bgnd-btn-primary);
+}

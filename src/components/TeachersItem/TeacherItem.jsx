@@ -23,28 +23,29 @@ const TeachersItem = ({ teacher }) => {
         <img src="" alt="" />
       </div>
       <div className={style.teachersName}>
-        <p>Languages</p>
-        <p>
+        <p className={style.teachersNameNote}>Languages</p>
+        <p className={style.teachersNamePara}>
           {name} {surname}
         </p>
       </div>
       <div className={style.teachersInfo}>
-        <ul>
+        <ul className={style.teachersInfoList}>
           <li>
-            <span>Lessons online</span>
-            <span></span>
+            <p className={style.teachersInfoPara}>Lessons online</p>
           </li>
           <li>
-            <span>Lessons done:</span>
-            <span> {lessons_done}</span>
+            <p className={style.teachersInfoPara}>
+              Lessons done: {lessons_done}
+            </p>
           </li>
           <li>
-            <span>Rating:</span>
-            <span> {rating}</span>
+            <p className={style.teachersInfoPara}>Rating: {rating}</p>
           </li>
           <li>
-            <span>Price / 1 hour:</span>
-            <span> {price_per_hour}$</span>
+            <p className={style.teachersInfoPara}>
+              Price / 1 hour:
+              <span className={style.teachersInfoCost}> {price_per_hour}$</span>
+            </p>
           </li>
         </ul>
       </div>
@@ -71,7 +72,7 @@ const TeachersItem = ({ teacher }) => {
         <span>Read more</span>
       </div>
       <div>
-        <ul>{langLevels}</ul>
+        <ul className={style.teachersLangLevels}>{langLevels}</ul>
       </div>
     </li>
   );
