@@ -48,23 +48,22 @@ const TeachersItem = ({ teacher }) => {
             </p>
           </li>
         </ul>
+        <button type="button" className={style.teachersInfoBtn}></button>
       </div>
-      <div>
-        <button></button>
-      </div>
-      <div>
-        <ul>
+
+      <div className={style.teachersDesc}>
+        <ul className={style.teachersDescList}>
           <li>
-            <span>Speaks:</span>
-            <span> {languages}</span>
+            <p className={style.teachersDescPara}>Speaks:</p>
+            <span className={style.teachersDescLang}> {languages}</span>
           </li>
           <li>
-            <span>Lesson Info:</span>
-            <span> {lesson_info}</span>
+            <p className={style.teachersDescPara}>Lesson Info:</p>
+            <span className={style.teachersDescSpan}> {lesson_info}</span>
           </li>
           <li>
-            <span>Conditions:</span>
-            <span> {conditions}</span>
+            <p className={style.teachersDescPara}>Conditions:</p>
+            <span className={style.teachersDescSpan}> {conditions}</span>
           </li>
         </ul>
       </div>

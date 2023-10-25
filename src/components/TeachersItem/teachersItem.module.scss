@@ -18,6 +18,13 @@
         line-height: 1;
     }
 
+    &Info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     &InfoList {
         display: flex;
         flex-direction: row;
@@ -35,6 +42,49 @@
 
     &InfoCost {
         color: var(--text-price);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &InfoBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        border: none;
+        background-color: var(--bgnd-btn-black);
+        margin-left: 64px;
+    }
+
+    &DescList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &DescPara {
+        color: var(--text-notes);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &DescLang {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        text-decoration-line: underline;
+    }
+
+    &DescSpan {
+        color: var(--text-primary);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
