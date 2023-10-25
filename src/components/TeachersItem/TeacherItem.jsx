@@ -2,7 +2,7 @@ import LangLevels from "./LangLevels/LangLevels";
 import style from "./teachersItem.module.scss";
 
 const TeachersItem = ({ teacher }) => {
-  //   console.log(teacher);
+  console.log(teacher.avatar_url);
   const {
     name,
     surname,
@@ -54,21 +54,27 @@ const TeachersItem = ({ teacher }) => {
       <div className={style.teachersDesc}>
         <ul className={style.teachersDescList}>
           <li>
-            <p className={style.teachersDescPara}>Speaks:</p>
-            <span className={style.teachersDescLang}> {languages}</span>
+            <p className={style.teachersDescPara}>
+              Speaks:
+              <span className={style.teachersDescLang}> {languages}</span>
+            </p>
           </li>
           <li>
-            <p className={style.teachersDescPara}>Lesson Info:</p>
-            <span className={style.teachersDescSpan}> {lesson_info}</span>
+            <p className={style.teachersDescPara}>
+              Lesson Info:
+              <span className={style.teachersDescSpan}> {lesson_info}</span>
+            </p>
           </li>
           <li>
-            <p className={style.teachersDescPara}>Conditions:</p>
-            <span className={style.teachersDescSpan}> {conditions}</span>
+            <p className={style.teachersDescPara}>
+              Conditions:
+              <span className={style.teachersDescSpan}> {conditions}</span>
+            </p>
           </li>
         </ul>
       </div>
-      <div>
-        <span>Read more</span>
+      <div className={style.teachersLink}>
+        <p className={style.teachersLinkPara}>Read more</p>
       </div>
       <div>
         <ul className={style.teachersLangLevels}>{langLevels}</ul>
