@@ -2,7 +2,7 @@ import LangLevels from "./LangLevels/LangLevels";
 import style from "./teachersItem.module.scss";
 
 const TeachersItem = ({ teacher }) => {
-  console.log(teacher.avatar_url);
+  // console.log(teacher.avatar_url);
   const {
     name,
     surname,
@@ -12,6 +12,7 @@ const TeachersItem = ({ teacher }) => {
     languages,
     lesson_info,
     conditions,
+    avatar_url,
   } = teacher;
 
   const langLevels = teacher.levels.map((level) => (
@@ -20,7 +21,7 @@ const TeachersItem = ({ teacher }) => {
   return (
     <li className={style.teachers}>
       <div>
-        <img src="" alt="" />
+        <img src={avatar_url} alt="teacher-pic" />
       </div>
       <div className={style.teachersName}>
         <p className={style.teachersNameNote}>Languages</p>
