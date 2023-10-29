@@ -2,18 +2,16 @@
     width: 1184px;
     height: 328px;
 
-    &Pic {
-        width: 96px;
-        height: 96px;
-        flex-shrink: 0;
-        background: var(--bgnd-white);
-    }
-
-    &PicSpan {
+    &PicContainer {
         width: 120px;
         height: 120px;
+        flex-shrink: 0;
+    }
+
+    &Pic {
         border-radius: 100px;
         border: 3px solid #FBE9BA;
+        background: var(--bgnd-white);
     }
 
     &NameNote {

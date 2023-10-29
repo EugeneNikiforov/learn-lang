@@ -20,14 +20,8 @@ const TeachersItem = ({ teacher }) => {
   ));
   return (
     <li className={style.teachers}>
-      <div>
-        <span className={style.teachersPicSpan}>
-          <img
-            src={avatar_url}
-            alt="teacher-pic"
-            className={style.teachersPic}
-          />
-        </span>
+      <div className={style.teachersPicContainer}>
+        <img src={avatar_url} alt="teacher-pic" className={style.teachersPic} />
       </div>
       <div className={style.teachersName}>
         <p className={style.teachersNameNote}>Languages</p>
