@@ -1,4 +1,5 @@
 import LangLevels from "./LangLevels/LangLevels";
+import onlineIcon from "../../assets/icons/isOnline.svg";
 import style from "./teachersItem.module.scss";
 
 const TeachersItem = ({ teacher }) => {
@@ -22,6 +23,7 @@ const TeachersItem = ({ teacher }) => {
     <li className={style.teachers}>
       <div className={style.teachersPicContainer}>
         <img src={avatar_url} alt="teacher-pic" className={style.teachersPic} />
+        <img src={onlineIcon} alt="online-pic" className={style.teachersIcon} />
       </div>
       <div className={style.teachersName}>
         <p className={style.teachersNameNote}>Languages</p>
