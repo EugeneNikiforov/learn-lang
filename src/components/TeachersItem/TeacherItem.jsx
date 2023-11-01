@@ -83,7 +83,7 @@ const TeachersItem = ({ teacher }) => {
         <div className={style.teachersLink}>
           <p className={style.teachersLinkPara}>Read more</p>
         </div>
-        <div>
+        <div className={style.teachersLang}>
           <ul className={style.teachersLangLevels}>{langLevels}</ul>
         </div>
       </div>
