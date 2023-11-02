@@ -1,9 +1,15 @@
-import "./BalanceModal.css";
+import "./ModalReg.scss";
 
 const Modal = ({ children, active, setActive }) => {
   return (
-    <div className={active ? "overlay active" : "overlay"} onClick={() => {}}>
-      <div className={active ? "modal active" : "modal"} onClick={() => {}}>
+    <div
+      className={active ? "overlay active" : "overlay"}
+      onClick={() => setActive(false)}
+    >
+      <div
+        className={active ? "modal active" : "modal"}
+        onClick={(e) => e.stopPropagation()}
+      >
         {children}
       </div>
     </div>
