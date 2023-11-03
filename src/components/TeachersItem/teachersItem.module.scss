@@ -94,7 +94,9 @@
         width: 26px;
         height: 26px;
         border: none;
-        background-color: var(--bgnd-btn-black);
+        background-image: url(../../assets/icons/heart.svg);
+        background-color: transparent;
+        fill: red;
         margin-left: 64px;
     }
 
