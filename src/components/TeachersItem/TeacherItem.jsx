@@ -1,5 +1,6 @@
 import LangLevels from "./LangLevels/LangLevels";
 import onlineIcon from "../../assets/icons/isOnline.svg";
+import { ReactComponent as Heart } from "../../assets/icons/heart.svg";
 import style from "./teachersItem.module.scss";
 
 const TeachersItem = ({ teacher }) => {
@@ -55,7 +56,13 @@ const TeachersItem = ({ teacher }) => {
               </p>
             </li>
           </ul>
-          <button type="button" className={style.teachersInfoBtn}></button>
+          <button type="button" className={style.teachersInfoBtn}>
+            <Heart
+              className={style.teachersInfoBtnPic}
+              width={26}
+              height={26}
+            />
+          </button>
         </div>
 
         <div className={style.teachersDesc}>
