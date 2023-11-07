@@ -35,16 +35,16 @@ const TeachersItem = ({ teacher }) => {
             </p>
           </div>
           <ul className={style.teachersInfoList}>
-            <li>
-              <p className={style.teachersInfoPara}>Lessons online</p>
+            <li className={style.teachersInfoItemOnline}>
+              <p className={style.teachersInfoParaOnline}>Lessons online</p>
             </li>
             <li>
               <p className={style.teachersInfoPara}>
                 Lessons done: {lessons_done}
               </p>
             </li>
-            <li>
-              <p className={style.teachersInfoPara}>Rating: {rating}</p>
+            <li className={style.teachersInfoItemRating}>
+              <p className={style.teachersInfoParaRating}>Rating: {rating}</p>
             </li>
             <li>
               <p className={style.teachersInfoPara}>

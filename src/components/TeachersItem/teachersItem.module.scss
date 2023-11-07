@@ -71,12 +71,65 @@
         align-items: center;
     }
 
+    &InfoItemOnline {
+        display: block;
+        position: relative;
+    }
+
+    &InfoParaOnline {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+
+        &::before {
+            position: absolute;
+            top: 4.5px;
+            left: -24px;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(../../assets/icons/bookOpen.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
     &InfoPara {
         color: var(--text-primary);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
+    }
+
+    &InfoItemRating {
+        display: block;
+        position: relative;
+    }
+
+    &InfoParaRating {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-left: 24px;
+
+        &::before {
+            position: absolute;
+            top: 4.5px;
+            left: 0;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(../../assets/icons/star.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     &InfoCost {
