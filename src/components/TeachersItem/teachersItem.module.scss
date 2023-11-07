@@ -82,6 +82,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
+        padding-right: 16px;
 
         &::before {
             position: absolute;
@@ -95,6 +96,47 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            right: -9px;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(../../assets/icons/line.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &InfoItemLessons {
+        display: block;
+        position: relative;
+    }
+
+    &InfoParaLessons {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            right: -9px;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(../../assets/icons/line.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     &InfoPara {
@@ -103,6 +145,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
+        padding-left: 16px;
     }
 
     &InfoItemRating {
@@ -116,17 +159,31 @@
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
-        margin-left: 24px;
+        padding-left: 40px;
+        padding-right: 16px;
 
         &::before {
             position: absolute;
             top: 4.5px;
-            left: 0;
+            left: 16px;
             display: inline-block;
             content: "";
             width: 16px;
             height: 16px;
             background-image: url(../../assets/icons/star.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            right: -9px;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url(../../assets/icons/line.svg);
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -150,6 +207,7 @@
         // background-image: url(../../assets/icons/heart.svg);
         background-color: transparent;
         margin-left: 64px;
+        cursor: pointer;
 
         
     }

@@ -38,8 +38,8 @@ const TeachersItem = ({ teacher }) => {
             <li className={style.teachersInfoItemOnline}>
               <p className={style.teachersInfoParaOnline}>Lessons online</p>
             </li>
-            <li>
-              <p className={style.teachersInfoPara}>
+            <li className={style.teachersInfoItemLessons}>
+              <p className={style.teachersInfoParaLessons}>
                 Lessons done: {lessons_done}
               </p>
             </li>
