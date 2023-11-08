@@ -1,6 +1,16 @@
+import React from "react";
+import Modal from "./ModalReg";
 import style from "./header.module.scss";
 
 const Header = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  const [balance, setBalance] = React.useState("");
+
+  const valueChange = (e) => {
+    const { value } = e.target;
+    setBalance(value);
+  };
+
   return (
     <header className={style.header}>
       <div className={style.headerContainer}>
@@ -18,6 +28,23 @@ const Header = () => {
           </button>
         </div>
       </div>
+      <Modal active={showModal} setActive={setShowModal}>
+        <form action="" className={style.balanceForm}>
+          <label>
+            <p className={style.balanceModalPara}>Balance:</p>
+            <input
+              className={style.balanceModalInput}
+              type="text"
+              name="balance"
+              value={balance}
+              onChange={valueChange}
+            />
+          </label>
+          <button className={style.balanceModalBtn} type="submit">
+            Confirm
+          </button>
+        </form>
+      </Modal>
     </header>
   );
 };
