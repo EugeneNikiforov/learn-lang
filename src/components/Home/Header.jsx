@@ -29,18 +29,18 @@ const Header = () => {
         </div>
       </div>
       <Modal active={showModal} setActive={setShowModal}>
-        <form action="" className={style.balanceForm}>
+        <form action="" className={style.headerForm}>
           <label>
-            <p className={style.balanceModalPara}>Balance:</p>
+            <p className={style.headerModalPara}>Balance:</p>
             <input
-              className={style.balanceModalInput}
+              className={style.headerModalInput}
               type="text"
               name="balance"
               value={balance}
               onChange={valueChange}
             />
           </label>
-          <button className={style.balanceModalBtn} type="submit">
+          <button className={style.headerModalBtn} type="submit">
             Confirm
           </button>
         </form>

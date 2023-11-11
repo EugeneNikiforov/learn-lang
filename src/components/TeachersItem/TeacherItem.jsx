@@ -67,19 +67,19 @@ const TeachersItem = ({ teacher }) => {
 
         <div className={style.teachersDesc}>
           <ul className={style.teachersDescList}>
-            <li>
+            <li className={style.teachersDescListItem}>
               <p className={style.teachersDescPara}>
                 Speaks:
                 <span className={style.teachersDescLang}> {languages}</span>
               </p>
             </li>
-            <li>
+            <li className={style.teachersDescListItem}>
               <p className={style.teachersDescPara}>
                 Lesson Info:
                 <span className={style.teachersDescSpan}> {lesson_info}</span>
               </p>
             </li>
-            <li>
+            <li className={style.teachersDescListItem}>
               <p className={style.teachersDescPara}>
                 Conditions:
                 <span className={style.teachersDescSpan}> {conditions}</span>
