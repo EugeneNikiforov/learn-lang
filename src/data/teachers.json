@@ -4,12 +4,12 @@
     "surname": "Konfetkina",
     "languages": ["English", "German"],
     "levels": [
-      "A1 Beginner",
-      "A2 Elementary",
-      "B1 Pre-Intermediate",
-      "B2 Intermediate",
-      "C1 Advanced",
-      "C2 Proficient"
+      "#A1 Beginner",
+      "#A2 Elementary",
+      "#B1 Pre-Intermediate",
+      "#B2 Intermediate",
+      "#C1 Advanced",
+      "#C2 Proficient"
     ],
     "rating": 4.5,
     "reviews": [
@@ -39,11 +39,11 @@
     "surname": "Deploivna",
     "languages": ["English", "Polish"],
     "levels": [
-      "A1 Beginner",
-      "A2 Elementary",
-      "B1 Pre-Intermediate",
-      "B2 Intermediate",
-      "C1 Advanced"
+      "#A1 Beginner",
+      "#A2 Elementary",
+      "#B1 Pre-Intermediate",
+      "#B2 Intermediate",
+      "#C1 Advanced"
     ],
     "rating": 4.7,
     "reviews": [

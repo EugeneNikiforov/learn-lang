@@ -1,0 +1,20 @@
+.langList {
+    display: flex;
+
+    // &:not(:last-child) {
+    //     margin-right: 8px;
+    // }
+
+    &Para {
+        color: var(--text-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}
+
+.langList:hover,
+.langList:focus {
+    color: var(--bgnd-btn-hover);
+}
