@@ -1,5 +1,5 @@
 import LangLevels from "./LangLevels/LangLevels";
-import LangList from "./LangList/LangList";
+// import LangList from "./LangList/LangList";
 import onlineIcon from "../../assets/icons/isOnline.svg";
 import { ReactComponent as Heart } from "../../assets/icons/heart.svg";
 import style from "./teachersItem.module.scss";
@@ -18,9 +18,9 @@ const TeachersItem = ({ teacher }) => {
     avatar_url,
   } = teacher;
 
-  const langList = languages.map((language) => (
-    <LangList language={language} key={language.toString()} />
-  ));
+  // const langList = languages.map((language) => (
+  //   <LangList language={language} key={language.toString()} />
+  // ));
 
   const langLevels = teacher.levels.map((level) => (
     <LangLevels level={level} key={level.toString()} />
@@ -75,7 +75,10 @@ const TeachersItem = ({ teacher }) => {
             <li className={style.teachersDescListItem}>
               <p className={style.teachersDescPara}>
                 Speaks:
-                <span className={style.teachersDescLang}> {langList}</span>
+                <span className={style.teachersDescLang}>
+                  {" "}
+                  {languages.join(", ")}
+                </span>
               </p>
             </li>
             <li className={style.teachersDescListItem}>
