@@ -2,6 +2,7 @@ import Teachers from "./Teachers/Teachers";
 import teachers from "../data/teachers.json";
 import Header from "./Home/Header";
 import "../index.scss";
+import { Route, Routes } from "react-router-dom";
 
 export const App = () => {
   return (
@@ -16,8 +17,10 @@ export const App = () => {
         color: "#010101",
       }}
     >
-      <Header />
-      <Teachers teachers={teachers} />
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/teachers" element={<Teachers teachers={teachers} />} />
+      </Routes>
     </div>
   );
 };
