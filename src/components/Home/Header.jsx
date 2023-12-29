@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "./ModalReg";
 import style from "./header.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showModal, setShowModal] = React.useState(false);
@@ -15,14 +16,14 @@ const Header = () => {
     <header className={style.header}>
       <div className={style.headerContainer}>
         <div className={style.headerLogoContainer}>
-          <span className={style.headerLogo}>LearnLingo</span>
+          <Link className={style.headerLogo}>LearnLingo</Link>
         </div>
         <div className={style.headerMenu}>
-          <span className={style.headerMenuHome}>Home</span>
-          <span className={style.headerMenuTeachers}>Teachers</span>
+          <Link className={style.headerMenuHome}>Home</Link>
+          <Link className={style.headerMenuTeachers}>Teachers</Link>
         </div>
         <div className={style.headerBtns}>
-          <span className={style.headerBtnsLogin}>Log in</span>
+          <Link className={style.headerBtnsLogin}>Log in</Link>
           <button type="button" className={style.headerBtnsReg}>
             Registration
           </button>
