@@ -1,16 +1,16 @@
 import React from "react";
-import Modal from "./ModalReg";
+// import Modal from "./ModalReg";
 import style from "./header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [showModal, setShowModal] = React.useState(false);
-  const [balance, setBalance] = React.useState("");
+  // const [showModal, setShowModal] = React.useState(false);
+  // const [balance, setBalance] = React.useState("");
 
-  const valueChange = (e) => {
-    const { value } = e.target;
-    setBalance(value);
-  };
+  // const valueChange = (e) => {
+  //   const { value } = e.target;
+  //   setBalance(value);
+  // };
 
   return (
     <header className={style.header}>
@@ -29,7 +29,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <Modal active={showModal} setActive={setShowModal}>
+      {/* <Modal active={showModal} setActive={setShowModal}>
         <form action="" className={style.headerForm}>
           <label>
             <p className={style.headerModalPara}>Balance:</p>
@@ -45,7 +45,7 @@ const Header = () => {
             Confirm
           </button>
         </form>
-      </Modal>
+      </Modal> */}
     </header>
   );
 };
