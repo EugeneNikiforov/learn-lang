@@ -36,7 +36,12 @@ const Header = () => {
       <Modal active={showModal} setActive={setShowModal}>
         <form action="" className={style.headerForm}>
           <label>
-            <p className={style.headerModalPara}>Balance:</p>
+            <p className={style.headerModalPara}>Registration</p>
+            <p>
+              Thank you for your interest in our platform! In order to register,
+              we need some information. Please provide us with the following
+              information
+            </p>
             <input
               className={style.headerModalInput}
               type="text"
