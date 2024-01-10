@@ -34,26 +34,28 @@ const Header = () => {
         </div>
       </div>
       <Modal active={showModal} setActive={setShowModal}>
-        <form action="" className={style.headerForm}>
-          <label>
-            <p className={style.headerModalPara}>Registration</p>
-            <p>
-              Thank you for your interest in our platform! In order to register,
-              we need some information. Please provide us with the following
-              information
-            </p>
-            <input
-              className={style.headerModalInput}
-              type="text"
-              name="balance"
-              value={balance}
-              onChange={valueChange}
-            />
-          </label>
-          <button className={style.headerModalBtn} type="submit">
-            Confirm
-          </button>
-        </form>
+        <div className={style.headerFormContainer}>
+          <p className={style.headerModalReg}>Registration</p>
+          <p className={style.headerModalPara}>
+            Thank you for your interest in our platform! In order to register,
+            we need some information. Please provide us with the following
+            information
+          </p>
+          <form action="" className={style.headerForm}>
+            <label>
+              <input
+                className={style.headerModalInput}
+                type="text"
+                name="balance"
+                value={balance}
+                onChange={valueChange}
+              />
+            </label>
+            <button className={style.headerModalBtn} type="submit">
+              Confirm
+            </button>
+          </form>
+        </div>
       </Modal>
     </header>
   );
