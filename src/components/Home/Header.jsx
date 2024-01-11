@@ -46,13 +46,31 @@ const Header = () => {
               <input
                 className={style.headerModalInput}
                 type="text"
-                name="balance"
+                name="name"
+                value={balance}
+                onChange={valueChange}
+              />
+            </label>
+            <label>
+              <input
+                className={style.headerModalInput}
+                type="text"
+                name="email"
+                value={balance}
+                onChange={valueChange}
+              />
+            </label>
+            <label>
+              <input
+                className={style.headerModalInput}
+                type="text"
+                name="password"
                 value={balance}
                 onChange={valueChange}
               />
             </label>
             <button className={style.headerModalBtn} type="submit">
-              Confirm
+              Sign Up
             </button>
           </form>
         </div>
