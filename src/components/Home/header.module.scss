@@ -125,5 +125,15 @@
             line-height: 1.375;
             margin-bottom: 40px;
         }
+
+        &Input {
+            width: 438px;
+            border: 1px solid rgba(18, 20, 23, 0.10);
+            margin-bottom: 18px;
+        }
+
+        &Pass {
+            margin-bottom: 40px;
+        }
     }
 }

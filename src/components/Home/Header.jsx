@@ -62,7 +62,7 @@ const Header = () => {
             </label>
             <label>
               <input
-                className={style.headerModalInput}
+                className={style.headerModalPass}
                 type="text"
                 name="password"
                 value={balance}
