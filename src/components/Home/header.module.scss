@@ -132,8 +132,16 @@
             margin-bottom: 18px;
         }
 
+        &Input:hover, Input:focus {
+            border: 1px solid blue;
+        }
+
         &Pass {
             margin-bottom: 40px;
+        }
+
+        &Pass:hover, Pass:focus {
+            border: 1px solid blue;
         }
     }
 }
